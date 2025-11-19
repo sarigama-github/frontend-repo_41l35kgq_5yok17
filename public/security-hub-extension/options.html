@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Security Hub • Dashboard</title>
+    <style>
+      body{font:14px system-ui,Segoe UI,Roboto;background:#071320;color:#e2f7ef;margin:0}
+      header{padding:18px 16px;border-bottom:1px solid #0c2f29;background:#071b23;color:#a7f3d0}
+      .container{max-width:960px;margin:0 auto;padding:16px}
+      .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+      .card{padding:14px;border:1px solid #145e56;border-radius:12px;background:#0f1b2d}
+      .row{display:flex;align-items:center;justify-content:space-between;margin:8px 0}
+      .pill{border:1px solid #145e56;border-radius:999px;padding:6px 10px;background:#0b2a26;color:#bcf7e7;cursor:pointer}
+      .muted{color:#9bd6c7}
+      @media (max-width: 720px){.grid{grid-template-columns:1fr}}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">Security Hub • Dashboard</div>
+    </header>
+    <div class="container">
+      <section class="grid">
+        <div class="card">
+          <h3>Protection toggles</h3>
+          <div class="row"><span>Ad blocker</span><button id="ad" class="pill">...</button></div>
+          <div class="row"><span>Phishing protection</span><button id="phish" class="pill">...</button></div>
+          <div class="row"><span>Download scanner</span><button id="dl" class="pill">...</button></div>
+          <div class="row"><span>Behavior detector</span><button id="beh" class="pill">...</button></div>
+        </div>
+        <div class="card">
+          <h3>Password exposure check</h3>
+          <div class="row"><input id="email" placeholder="Email" style="flex:1;padding:8px;border-radius:8px;border:1px solid #145e56;background:#071b23;color:#e2f7ef"/> <button id="check" class="pill">Check</button></div>
+          <div id="result" class="muted" style="margin-top:8px"></div>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top:16px">
+        <h3>Recent activity</h3>
+        <div id="logs" class="muted">Loading...</div>
+      </section>
+    </div>
+    <script src="options.js" type="module"></script>
+  </body>
+</html>

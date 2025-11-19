@@ -1,0 +1,12 @@
+[
+  {"id": 1, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.doubleclick.net/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}},
+  {"id": 2, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.googlesyndication.com/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}},
+  {"id": 3, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.adservice.google.com/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}},
+  {"id": 4, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.taboola.com/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}},
+  {"id": 5, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.outbrain.com/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}},
+  {"id": 6, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.scorecardresearch.com/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}},
+  {"id": 7, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.quantserve.com/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}},
+  {"id": 8, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.moatads.com/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}},
+  {"id": 9, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.criteo.com/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}},
+  {"id": 10, "priority": 1, "action": {"type": "block"}, "condition": {"urlFilter": "*://*.adnxs.com/*", "resourceTypes": ["script", "sub_frame", "image", "xmlhttprequest"]}}
+]
